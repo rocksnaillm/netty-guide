@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bd70fda-2bec-4351-ba2d-99974725127a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rock/snail/bio/BioServer.java" afterDir="false" />
+    <list default="true" id="9bd70fda-2bec-4351-ba2d-99974725127a" name="Default Changelist" comment="netty群聊">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rock/snail/netty/rpc/core/RpcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rock/snail/netty/rpc/provider/RpcServe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rock/snail/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rock/snail/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/rock/snail/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/rock/snail/AppTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -55,10 +54,12 @@
   <component name="ProjectId" id="1bsWXksL6dLF8kXlPK9w5v2w3Oy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -82,13 +83,65 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="BioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rock.snail.bio.BioServer" />
+  <component name="RunManager" selected="Application.GroupChatClient">
+    <configuration name="GroupChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rock.snail.nio.group.GroupChatClient" />
       <module name="netty-guide" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rock.snail.bio.*" />
+          <option name="PATTERN" value="com.rock.snail.nio.group.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupChatClientNetty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rock.snail.netty.groupchat.GroupChatClientNetty" />
+      <module name="netty-guide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rock.snail.netty.groupchat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupChatServerNetty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rock.snail.netty.groupchat.GroupChatServerNetty" />
+      <module name="netty-guide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rock.snail.netty.groupchat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rock.snail.netty.simple.NettyClient" />
+      <module name="netty-guide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rock.snail.netty.simple.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rock.snail.netty.simple.NettyServer" />
+      <module name="netty-guide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rock.snail.netty.simple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,9 +151,16 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BioServer" />
+        <item itemvalue="Application.GroupChatClientNetty" />
+        <item itemvalue="Application.GroupChatServerNetty" />
+        <item itemvalue="Application.GroupChatClient" />
+        <item itemvalue="Application.NettyServer" />
+        <item itemvalue="Application.NettyClient" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES,SHOW_NON_PUBLIC,VISIBILITY_SORTER,SHOW_INHERITED" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -116,8 +176,82 @@
       <workItem from="1589477587982" duration="4089000" />
       <workItem from="1590198830246" duration="2441000" />
       <workItem from="1590368777445" duration="585000" />
-      <workItem from="1596520874478" duration="3163000" />
+      <workItem from="1596520874478" duration="18822000" />
+      <workItem from="1596784258260" duration="5126000" />
+      <workItem from="1597028144490" duration="1000" />
+      <workItem from="1597129738829" duration="3583000" />
+      <workItem from="1598232413515" duration="21696000" />
+      <workItem from="1598577468906" duration="2887000" />
+      <workItem from="1601100612690" duration="11715000" />
+      <workItem from="1601272659926" duration="18204000" />
+      <workItem from="1602205902537" duration="583000" />
+      <workItem from="1608702770497" duration="85000" />
+      <workItem from="1613800061081" duration="2107000" />
     </task>
+    <task id="LOCAL-00001" summary="bioserver">
+      <created>1596531586042</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596531586042</updated>
+    </task>
+    <task id="LOCAL-00002" summary="文件通道操作">
+      <created>1596617101815</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596617101815</updated>
+    </task>
+    <task id="LOCAL-00003" summary="完善注释">
+      <created>1598259060865</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598259060865</updated>
+    </task>
+    <task id="LOCAL-00004" summary="群聊系统nio模式">
+      <created>1598508596646</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598508596646</updated>
+    </task>
+    <task id="LOCAL-00005" summary="netty简单版案例">
+      <created>1601111295915</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601111295916</updated>
+    </task>
+    <task id="LOCAL-00006" summary="netty 模拟http">
+      <created>1601113053159</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601113053159</updated>
+    </task>
+    <task id="LOCAL-00007" summary="websocket测试">
+      <created>1601282977457</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601282977457</updated>
+    </task>
+    <task id="LOCAL-00008" summary="netty群聊">
+      <created>1601295546727</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601295546727</updated>
+    </task>
+    <task id="LOCAL-00009" summary="编码器">
+      <created>1601373634762</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601373634762</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,5 +269,28 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bioserver" />
+    <MESSAGE value="文件通道操作" />
+    <MESSAGE value="完善注释" />
+    <MESSAGE value="群聊系统nio模式" />
+    <MESSAGE value="netty简单版案例" />
+    <MESSAGE value="netty 模拟http" />
+    <MESSAGE value="websocket测试" />
+    <MESSAGE value="netty群聊" />
+    <MESSAGE value="编码器" />
+    <option name="LAST_COMMIT_MESSAGE" value="编码器" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/rock/snail/netty/groupchat/GroupChatServerNetty.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
